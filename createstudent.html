@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+           
+
+       <script>
+        
+        let Data={enrollmentNumber: "3", 
+                     name: "Shubh", 
+                     course: "MCA LE",
+                     year: "2",
+                    password: "pass3"
+                    };
+         
+         console.log(JSON.stringify(Data));
+         const xhr=new XMLHttpRequest();
+      xhr.open("POST", "http://crossorigin.me/https://still-harbor-14251.herokuapp.com/create/", true);
+      xhr.setRequestHeader("Content-Type","application/json");
+      xhr.send(JSON.stringify(Data));
+      console.log(xhr.status);
+
+        </script>
+    </head>
+    <body>
+           
+    </body>
+</html>
